@@ -4,13 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uzumaki Travels</title>
+    <title>GO Travels</title>
+
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/70e946ea0a.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style -->
+    <style>
+        * {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
 
 </head>
 
 <body>
+
+    <!-- header -->
+    <header class="mt-5 container mx-auto">
+
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl font-bold">GO Travels</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-lg text-[#030712be]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn font-medium text-lg border-[#1DD100] bg-[#1cd10021] cursor-pointer"><span
+                            class="text-[#1DD100] lg:font-semibold">Bus</span> <img src="./images/bus-icon.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <div style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.253)), url('./images/banner.png');"
+            class="mt-8 bg-no-repeat bg-center bg-cover h-[551px] rounded-2xl">
+            <div class="text-center space-y-9">
+                <h1 class="text-7xl font-extrabold text-white pt-[100px]">End-to-End Travel with <br> <span
+                        class="text-[#1DD100]">Go Travels</span> </h1>
+                <p class="w-[550px] mx-auto text-gray-200 text-base font-medium">Yes, you can run unit tests and view
+                    the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] border-none text-[20px] font-semibold text-black"><a>Buy Tickets</a></button>
+
+            </div>
+
+            <!-- banner-buttons -->
+            <div class="flex items-center justify-center gap-6 relative top-[90px]">
+                <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                    <img src="./images/people.png" alt="" class="border-dashed  px-2">
+                    <div>
+                        <h4 class="text-[35px] font-bold">500K+</h4>
+                        <p class="text-[18px] font-semibold">Registered users</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                    <img src="images/ticket-cupon.png" alt="img" class="border-dashed  px-2">
+                    <div>
+                        <h4 class="text-[35px] font-bold">1.7 lacks</h4>
+                        <p class="text-[18px] font-semibold">Tickets sold</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-5 bg-white p-5 rounded-xl border-b-4 border-[#1DD100]">
+                    <img src="./images/stoppage.png" alt="" class="border-dashed  px-2">
+                    <div>
+                        <h4 class="text-[35px] font-bold">80K+</h4>
+                        <p class="text-[18px] font-semibold">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
 </body>
 
